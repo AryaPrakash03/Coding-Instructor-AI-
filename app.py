@@ -22,7 +22,9 @@ model = genai.GenerativeModel('gemini-1.5-flash')
 coding_chat = model.start_chat(history=[])
 
 # --- Helper Function ---
+UPLOAD_FOLDER = '/tmp/uploads'
 ALLOWED_EXTENSIONS = {'pdf', 'png', 'jpg', 'jpeg'}
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
