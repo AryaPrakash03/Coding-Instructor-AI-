@@ -16,10 +16,14 @@
         <div id="chat-window">
             <!-- Messages will be appended here by JavaScript -->
             <div class="message model-message">
-                <p>Hello! I'm Codey, your personal AI coding instructor. Ask me anything about programming!</p>
+                <p>Hello! I'm Codey, your personal AI coding instructor. Ask me anything about programming, or upload a PDF/Image for summarization!</p>
             </div>
         </div>
         <div id="input-area">
+            <!-- ### NEW ### -->
+            <input type="file" id="file-input" hidden accept=".pdf,.png,.jpg,.jpeg">
+            <button id="upload-btn" title="Upload PDF or Image">📎</button>
+            <!-- ### END NEW ### -->
             <input type="text" id="message-input" placeholder="Ask a coding question...">
             <button id="send-btn">Send</button>
         </div>

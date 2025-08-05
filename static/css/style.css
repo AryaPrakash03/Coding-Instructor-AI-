@@ -52,6 +52,7 @@ body {
     border-radius: 20px;
     margin-bottom: 15px;
     line-height: 1.5;
+    word-wrap: break-word; /* Prevents long text from overflowing */
 }
 
 .user-message {
@@ -74,6 +75,7 @@ body {
 
 #input-area {
     display: flex;
+    align-items: center; /* ### NEW ### Vertically align items */
     padding: 20px;
     border-top: 1px solid #ddd;
     background-color: #f9f9f9;
@@ -92,6 +94,22 @@ body {
 #message-input:focus {
     border-color: #4c669f;
 }
+
+/* ### NEW STYLES for upload button ### */
+#upload-btn {
+    background: none;
+    border: none;
+    font-size: 24px; /* Makes the paperclip icon larger */
+    cursor: pointer;
+    padding: 0 10px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+#upload-btn:hover {
+    color: #192f6a;
+}
+/* ### END NEW STYLES ### */
 
 #send-btn {
     background-color: #3b5998;
